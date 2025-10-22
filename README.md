@@ -25,7 +25,7 @@ Django REST API для управления и отображения геогр
 
 bash
 # Клонирование
-git clone https://github.com/your-username/discovery_api.git
+git clone https://github.com/Axoniuss/discovery_api.git
 cd discovery_api
 
 # Виртуальное окружение
