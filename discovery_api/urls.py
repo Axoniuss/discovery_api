@@ -16,8 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import main_page 
+from places.views import show_map, places_geojson, place_details
+from django.conf import settings
+from django.conf.urls.static import static
+ 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main_page, name='main_page'),
+    path('', show_map, name='main_page'),
+    path('places.geojson', places_geojson, name='places_geojson'),
+    # endpoints
+    path('places/<int:place_id>/', place_details, name='place_details'),  
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
