@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'imagekit',  
     'places',
+    'adminsortable2',
 ]
 
 MIDDLEWARE = [
