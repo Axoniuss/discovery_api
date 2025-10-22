@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField 
 
 class Place(models.Model):
     title = models.CharField('Название места', max_length=200)
@@ -6,6 +7,7 @@ class Place(models.Model):
     description_long = models.TextField('Полное описание', blank=True)
     lng = models.FloatField('Долгота')
     lat = models.FloatField('Широта')
+    description_long = RichTextField('Полное описание', blank=True)
     
     def __str__(self):
         return self.title

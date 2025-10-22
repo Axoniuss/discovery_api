@@ -41,8 +41,16 @@ INSTALLED_APPS = [
     'imagekit',  
     'places',
     'adminsortable2',
+    'ckeditor',
 ]
-
+CKEDITOR_CONFIGS = {
+    'default': {
+        'uiColor': '#1e1e1e', 
+        'toolbar': 'custom',
+        'height': 300,
+        'width': '100%',
+    },
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
