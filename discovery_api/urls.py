@@ -25,7 +25,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', show_map, name='main_page'),
-    path('places.geojson', places_geojson, name='places_geojson'),
+    path('places/geojson/', places_geojson, name='places_geojson'),
     # endpoints
     path('places/<int:place_id>/', place_details, name='place_details'),  
 ]
