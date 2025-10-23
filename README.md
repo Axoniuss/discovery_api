@@ -1,3 +1,9 @@
+# Сайт
+
+https://river33.pythonanywhere.com/
+<img width="549" height="320" alt="Снимок экрана от 2025-10-23 09-40-26" src="https://github.com/user-attachments/assets/e898b2ef-702b-49ce-96c4-5980d7cf5f3b" />
+
+
 # Discovery API
 
 Backend API для интерактивной карты мест Москвы.
