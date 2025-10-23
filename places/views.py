@@ -14,7 +14,6 @@ from .models import Place
 def show_map(request):
     return HttpResponse("""
     <h1>Moscow Discovery API</h1>
-    <p>Backend работает</p>
     <p>Доступные endpoints:</p>
     <ul>
         <li><a href="/places/geojson/">/places/geojson/</a> - GeoJSON всех мест</li>
